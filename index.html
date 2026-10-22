@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember & Bean | Specialty Coffee Roastery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<meta name="generator" content="Brahvia"></head>
+<body>
+  <!-- 1. Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Ember & Bean</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#beans">Beans</a>
+        <a href="#story">Story</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#menu" class="btn btn-primary">Order Now</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">Artisanal Mumbai Roastery</div>
+        <h1 class="hero-title">Roasted slow.<br>Poured with soul.</h1>
+        <p class="hero-subline">Small-batch specialty coffees sourced from India's finest high-altitude estates, roasted to unlock exceptional flavor profiles in every cup.</p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#beans" class="btn btn-secondary">Our Beans</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="coffee-cup-wrapper" aria-label="Animated coffee cup">
+          <div class="steam steam-1"></div>
+          <div class="steam steam-2"></div>
+          <div class="steam steam-3"></div>
+          <div class="cup-saucer"></div>
+          <div class="cup-body">
+            <div class="cup-handle"></div>
+            <div class="coffee-liquid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Signature Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="section-header fade-in">
+        <span class="section-subtitle">Curated Brews</span>
+        <h2 class="section-title">Signature Menu</h2>
+        <p class="section-desc">From classic espressos to velvety cold brews, crafted daily with precision and passion.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card fade-in">
+          <div class="menu-item-header">
+            <h3 class="menu-item-title">Jaggery Latte</h3>
+            <span class="menu-item-price">₹280</span>
+          </div>
+          <p class="menu-item-desc">Double shot espresso paired with creamy oat milk and organic artisanal palm jaggery syrup.</p>
+          <span class="menu-tag">Best Seller</span>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-item-header">
+            <h3 class="menu-item-title">Madras Cold Brew</h3>
+            <span class="menu-item-price">₹260</span>
+          </div>
+          <p class="menu-item-desc">18-hour slow-steeped single-origin chicory-blend cold brew served over crystal clear ice.</p>
+          <span class="menu-tag">Refreshing</span>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-item-header">
+            <h3 class="menu-item-title">Bourbon Barrel Pour-Over</h3>
+            <span class="menu-item-price">₹340</span>
+          </div>
+          <p class="menu-item-desc">Hand-poured filter coffee using beans aged in oak bourbon barrels with distinct notes of vanilla & oak.</p>
+          <span class="menu-tag">Limited</span>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-item-header">
+            <h3 class="menu-item-title">Velvet Cortado</h3>
+            <span class="menu-item-price">₹240</span>
+          </div>
+          <p class="menu-item-desc">Equal parts robust espresso and microfoamed milk, served in a warm ceramic tumbler.</p>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-item-header">
+            <h3 class="menu-item-title">Spiced Cardamom Mocha</h3>
+            <span class="menu-item-price">₹310</span>
+          </div>
+          <p class="menu-item-desc">Dark artisanal single-origin chocolate infused with bruised green cardamom pods and steamed milk.</p>
+        </div>
+        <div class="menu-card fade-in">
+          <div class="menu-item-header">
+            <h3 class="menu-item-title">Cascara Sparkler</h3>
+            <span class="menu-item-price">₹250</span>
+          </div>
+          <p class="menu-item-desc">Fruity and refreshing infusion made from dried coffee cherry husks, sparkling water, and lime peel.</p>
+          <span class="menu-tag">House Special</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Our Beans Section -->
+    <section id="beans" class="beans-section">
+      <div class="section-header fade-in">
+        <span class="section-subtitle">Single-Origin Excellence</span>
+        <h2 class="section-title">Our Beans</h2>
+        <p class="section-desc">Ethically sourced from sustainable Indian estates, roasted fresh weekly in Bandra.</p>
+      </div>
+      <div class="beans-grid">
+        <div class="bean-card fade-in">
+          <div class="bean-badge">Western Ghats</div>
+          <h3 class="bean-title">Coorg Zenith</h3>
+          <p class="bean-origin">Attikan Estate, Coorg • 4,200 ft</p>
+          <div class="roast-indicator">
+            <span class="roast-label">Roast Level:</span>
+            <div class="roast-dots">
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="roast-name">Medium</span>
+          </div>
+          <div class="tasting-notes">
+            <span>Dark Chocolate</span>
+            <span>Roasted Almond</span>
+            <span>Citrus Zest</span>
+          </div>
+          <p class="bean-desc">Grown under a dense canopy of native shade trees, yielding a smooth body with vibrant acidity and sweet nutty undertones.</p>
+        </div>
+
+        <div class="bean-card fade-in">
+          <div class="bean-badge">Babu Budan Giri</div>
+          <h3 class="bean-title">Chikmagalur Reserve</h3>
+          <p class="bean-origin">Ratnagiri Estate, Chikmagalur • 4,500 ft</p>
+          <div class="roast-indicator">
+            <span class="roast-label">Roast Level:</span>
+            <div class="roast-dots">
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="roast-name">Medium-Dark</span>
+          </div>
+          <div class="tasting-notes">
+            <span>Ripe Berries</span>
+            <span>Cane Sugar</span>
+            <span>Cinnamon Spice</span>
+          </div>
+          <p class="bean-desc">Historic heirloom varietals processed with natural anaerobic fermentation, producing a complex, fruit-forward cup with a lingering syrupy finish.</p>
+        </div>
+
+        <div class="bean-card fade-in">
+          <div class="bean-badge">Eastern Ghats</div>
+          <h3 class="bean-title">Araku Pearl</h3>
+          <p class="bean-origin">Tribal Farmer Co-op, Araku Valley • 3,100 ft</p>
+          <div class="roast-indicator">
+            <span class="roast-label">Roast Level:</span>
+            <div class="roast-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="roast-name">Light-Medium</span>
+          </div>
+          <div class="tasting-notes">
+            <span>Green Apple</span>
+            <span>Jasmine</span>
+            <span>Honey</span>
+          </div>
+          <p class="bean-desc">Cultivated by indigenous farming collectives practising biodynamic methods. Features a delicate floral aroma and crisp sparkling mouthfeel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Our Story Section -->
+    <section id="story" class="story-section">
+      <div class="story-container">
+        <div class="story-content fade-in">
+          <span class="section-subtitle">Craft & Heritage</span>
+          <h2 class="section-title">Rooted in passion, brewed for Mumbai</h2>
+          <p class="story-text">Ember & Bean began as a humble backyard roaster in 2012 with a vintage cast-iron drum and an obsession with single-origin Indian coffees. Today, we bridge the gap between conscientious mountain farmers and discerning city coffee lovers. Every batch is roasted in small quantities to highlight the distinct terroir of India’s highland plantations, bringing warmth and uncompromising quality to every cup we pour.</p>
+        </div>
+        <div class="counters-grid">
+          <div class="counter-box fade-in">
+            <span class="counter-number" data-target="12">0</span><span class="counter-suffix">+</span>
+            <span class="counter-label">Years Roasting</span>
+          </div>
+          <div class="counter-box fade-in">
+            <span class="counter-number" data-target="40">0</span><span class="counter-suffix">+</span>
+            <span class="counter-label">Partner Farms</span>
+          </div>
+          <div class="counter-box fade-in">
+            <span class="counter-number" data-target="5000">0</span><span class="counter-suffix">+</span>
+            <span class="counter-label">Cups / Week</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-header fade-in">
+        <span class="section-subtitle">Community Love</span>
+        <h2 class="section-title">What Coffee Lovers Say</h2>
+        <p class="section-desc">Kind words from our regulars and fellow connoisseurs across Mumbai.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"The Jaggery Latte is nothing short of a revelation. It bridges Indian traditional sweetness with world-class specialty coffee seamlessly. My absolute morning sanctuary."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AN</div>
+            <div class="author-info">
+              <strong>Ananya Nair</strong>
+              <span>Architect & Regular</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"As someone who grew up visiting coffee estates in Coorg, tasting their Chikmagalur reserve transported me right back. Exceptional clarity and roast mastery."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div class="author-info">
+              <strong>Rohan Kamath</strong>
+              <span>Food Journalist</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Incredible ambiance and staff who genuinely know their origins and extraction ratios. The Araku Pearl pour-over is a masterclass in delicate fruit notes."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DP</div>
+            <div class="author-info">
+              <strong>Dr. Priya Deshmukh</strong>
+              <span>Coffee Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Visit Us Section -->
+    <section id="visit" class="visit-section">
+      <div class="section-header fade-in">
+        <span class="section-subtitle">Drop By</span>
+        <h2 class="section-title">Visit Our Roastery & Cafe</h2>
+        <p class="section-desc">Come smell the freshly roasted beans or grab your favorite brew on the go.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-info fade-in">
+          <div class="info-block">
+            <h3>Address</h3>
+            <p>Shop No. 4, Palm Court, Chapel Road,<br>Bandra West, Mumbai, Maharashtra 400050</p>
+          </div>
+          <div class="info-block">
+            <h3>Opening Hours</h3>
+            <p>Monday – Sunday: 7:30 AM – 10:00 PM</p>
+          </div>
+          <div class="info-block">
+            <h3>Contact Details</h3>
+            <p>Phone: +91 22 2640 8912<br>Email: brew@emberandbean.in</p>
+          </div>
+        </div>
+
+        <div class="visit-form-wrapper fade-in">
+          <form id="contactForm" class="visit-form">
+            <h3>Reserve a Table or Inquire</h3>
+            <div class="form-group">
+              <label for="fullName">Your Name</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="Aarav Mehta">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label for="message">Message or Reservation Details</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Table for 2 this Saturday at 11 AM..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div id="formSuccess" class="form-success hidden">
+              <span>✨ Thank you! Your message has been received. We will reach out shortly.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">☕</span>
+          <span class="logo-text">Ember & Bean</span>
+        </div>
+        <p>Specialty coffee roastery crafting exceptional single-origin brews in the heart of Mumbai.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Signature Menu</a></li>
+          <li><a href="#beans">Our Beans</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">Spotify Playlist</a></li>
+          <li><a href="#">Wholesale Inquiries</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ember & Bean Roastery. All rights reserved. Handcrafted with warmth in Mumbai.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<div data-brahvia-badge style="position:fixed;right:10px;bottom:10px;z-index:2147483647;font:12px/1 system-ui,sans-serif;background:#0A1A4F;color:#fff;padding:7px 11px;border-radius:999px;opacity:.92"><a href="https://keshav516.github.io/brahvia.ai/" style="color:inherit;text-decoration:none">Made with Brahvia</a></div></body>
+</html>
